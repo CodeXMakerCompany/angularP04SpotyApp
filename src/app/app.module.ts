@@ -10,13 +10,17 @@ import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+
 //Rutas
 import { ROUTES } from './app.routes';
 //services
 import { SpotifyService } from './services/spotify.service';
 //Pipes
 import { NoimagePipe } from './pipes/noimage.pipe';
-import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +30,9 @@ import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
     ArtistComponent,
     NavbarComponent,
     NoimagePipe,
-    TarjetasComponent
+    DomseguroPipe,
+    TarjetasComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
