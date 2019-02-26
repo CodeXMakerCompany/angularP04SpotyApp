@@ -15,8 +15,8 @@ nuevasCanciones: any[] = [];
 
       this.spotify.getNewReleases()
         .subscribe( (data: any) => {
-            
-            this.nuevasCanciones = data.albums.items;
+            console.log(data);
+            this.nuevasCanciones = data;
         });
 
       }
